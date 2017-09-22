@@ -2,10 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
-/**
- * Created by Sajjad on 2017-09-13.
- */
-
 public class ImportantTweet extends Tweet implements Tweetable {
 
     public ImportantTweet(String message) {

@@ -2,10 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
-/**
- * Created by Sajjad on 2017-09-13.
- */
-
 public class NormalTweet extends Tweet implements Tweetable{
     public NormalTweet(String message) {
         super(message);
