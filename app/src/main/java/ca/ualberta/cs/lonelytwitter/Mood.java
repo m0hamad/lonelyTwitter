@@ -2,10 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
-/**
- * Created by Sajjad on 2017-09-14.
- */
-
 public abstract class Mood {
     protected Date date;
 
