@@ -1,3 +1,15 @@
+/*
+*LonelyTwitterActivity
+*
+* Version 1.0
+*
+* September 27, 2017
+*
+*Copyright © 2017 Team X, CMPUT301, University of Alberta - All Rights Reserved.
+*You may use, distribute, or modify this code under terms and conditions of the Code of Student Behaviour at University of Alberta.
+*You can find a copy of the license in this project. Otherwise please contact contact@abc.ca
+*/
+
 package ca.ualberta.cs.lonelytwitter;
 
 import android.app.Activity;
@@ -34,7 +46,9 @@ public class LonelyTwitterActivity extends Activity {
 	private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 	private ArrayAdapter<Tweet> adapter;
 	
-	/** Called when the activity is first created. */
+	/**
+	 * Called when the activity is first created.
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -76,6 +90,9 @@ public class LonelyTwitterActivity extends Activity {
         });
 	}
 
+    /**
+     * Loads tweets when app is open.
+     */
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
@@ -102,7 +119,10 @@ public class LonelyTwitterActivity extends Activity {
 			throw new RuntimeException(e);
 		}
 	}
-	
+
+    /**
+     * Save changes and store the info.
+     */
 	private void saveInFile() {
 		try {
 			FileOutputStream fos = openFileOutput(FILENAME,
